@@ -17,7 +17,7 @@ import javax.persistence.PersistenceContext;
 
 @Stateless
 public class OrderedProductFacade extends AbstractFacade<OrderedProduct> {
-    @PersistenceContext(unitName = "storePU")
+    @PersistenceContext(unitName = "MySqlDS")
     private EntityManager em;
 
     protected EntityManager getEntityManager() {

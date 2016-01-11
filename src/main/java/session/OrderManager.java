@@ -32,7 +32,7 @@ import javax.persistence.PersistenceContext;
 @TransactionManagement(TransactionManagementType.CONTAINER)
 public class OrderManager {
 
-    @PersistenceContext(unitName = "storePU")
+    @PersistenceContext(unitName = "MySqlDS")
     private EntityManager em;
     @Resource
     private SessionContext context;
